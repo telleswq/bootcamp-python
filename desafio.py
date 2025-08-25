@@ -6,7 +6,7 @@ def validar_cpf(cpf):
 def cadastrar_usuario():
     cpf = input("Digite seu CPF (apenas números, 11 dígitos): ").strip()
     if not validar_cpf(cpf):
-        print(" ❌ CPF inválido! Digite apenas números com 11 dígitos.")
+        print(" CPF inválido! Digite apenas números com 11 dígitos.")
         return None
 
     if cpf in usuarios:
@@ -109,7 +109,7 @@ def main():
         elif opcao == "e":
             exibir_extrato(usuario)
         elif opcao == "q":
-            print(" 👋 Obrigado por usar o Banco WQ. Até logo!")
+            print(" Obrigado por usar o Banco WQ. Até logo!")
             break
         else:
             print("  Opção inválida. Tente novamente.")
